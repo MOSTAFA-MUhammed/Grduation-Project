@@ -1,0 +1,242 @@
+:root {
+    --dark : #001e42;
+    --secound : #0b5558;
+    --threed : #055976;
+    --four : #0d8cbb ;
+    --five :  #9ddfd5;
+    --main-padding: 100px;
+    --main-transtion : 0.3s ;
+        --main-background : #ececec;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+} 
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .search:hover {
+    background-color: var(--secound);
+    color: white;
+}
+.navbar .icon svg {
+    margin: 26px auto;
+    border-left: none;
+    border-right: 3px solid var(--secound);
+    margin-right: 15px;
+    padding-right: 10px;
+}
+@media (max-width: 991px){
+    .navbar .icon svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        border-right: none;        
+    }
+}
+@media (max-width: 767px){
+    .navbar .icon svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-right: none;
+    }
+}
+.form-check .form-check-input {
+    float: right !important;
+    margin-right: -1.5em;
+}
+.landing p{
+    color: #ddd;
+}
+.landing .go-down {
+    color: var(--secound);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 40px;
+    transition: var(--main-transtion);
+    color: white;
+}
+.landing .go-down:hover{
+    color: var(--four);
+}
+.landing .go-down svg {
+    animation: sheee 1.5s infinite;
+}
+.login > p {
+    font-size: 20px;
+}
+.login .Simple {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    min-width: 103%;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.Profile .box p{
+    line-height: 2;
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 25px;
+    color: #777;
+    text-align: left;
+    min-height: 33% !important;
+} 
+.content h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.num1 p {
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 30px;
+}   
+.content2 h3 {
+    font-size: 30px;
+    FONT-WEIGHT: 600;
+    margin: 10px auto;
+}
+.drug .drug_info p {
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.drug_info4 button {
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #0D8CBB;
+    color: white;
+    padding: 7px 60px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: auto;
+}
+.save .save_btn {
+    border: none;
+    border-radius: 15px;
+    background-color: #0D8CBB;
+    color: white;
+    padding: 5px 60px;
+    font-weight: 500;
+    transition: 0.4s;
+    margin: auto;
+}
+.head p {
+    font-size: 30px;
+    color: #0559768a;
+}
+.date h3 {
+    color: #055976;
+    font-size: 26px;
+    margin-right: 10px;
+}
+.contact .text p {
+    max-width: 40%;
+    font-size: 24px;
+}
+.search svg {
+    width: 20px;
+    position: absolute;
+    margin-right: 38%;
+}
+.article .box .text p {
+    margin: 10px 0 0;
+    font-size: 19px;
+    color: #646060;
+    line-height: 1.5;
+}
+.sgin > p {
+    font-size: 25px;
+    color: white;
+}
+.sgin .form-check-label {
+    display: inline-block;
+    font-size: 20px;
+
+}
+.form-check .form-check-input {
+    float: left ;
+    margin-right: -1.5em; 
+}
+.sgin .form-label {
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.text-light {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+    font-size: 25px;
+}
+.login > p {
+    font-size: 25px;
+}
+.abo{
+    background-color: var(--main-background);
+}
+/* start anmation  */
+@keyframes sheee {
+    0% , 10% , 20% , 50% , 80% , 100%
+    {
+        transform: translateY(0);
+    }
+    40% , 60%
+    {
+        transform: translateY(-15px);
+    }
+}
+@keyframes left-up {
+    50%{
+        left: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100%{
+        left: 0;
+        border-radius: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+@keyframes right-up {
+    50%{
+        right: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100%{
+        right: 0;
+        border-radius: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+@keyframes move {
+    100%{
+        transform: translateX(10px);
+    }
+}
+/* end anmation  */

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="arb" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>تحليل البيانات | Carecure</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Carecure.css">
+    <link rel="stylesheet" href="css/Carecure-arb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- start header -->
+<nav class="navbar navbar-expand-lg ">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="image/logo-removebg-preview.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+                <li class="nav-item">
+                    <a class="nav-link p-2 active" href="home-arb.html">الصفحه الرئسيه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 "  href="profile-arb.html">الحساب الشخصي</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 "  href="History-arb.html">تاريخ الوصفة الطبية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 "  href="data-arb.html">تحليل البيانات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 "  href="ContactUs-arb.html">اتصل بنا</a>
+                </li>
+                <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                اللغات
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="data.html">اللغه الأنجلزيه</a></li>
+                <li><a class="dropdown-item" href="data-arb.html">اللغه العربيه</a></li>
+            </ul>
+                <li class="nav-item">
+                    <a class="nav-link p-2 "  href="#About">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-rounded p-2" href="SignIn-arb.html">تسجيل الدخول</a>
+                </li>
+            </ul>
+            <div class="icon">
+                <a href="search-arb.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+    </div>
+</div>
+</nav>
+    <!-- end header  -->
+    <!-- start data -->
+     <div class="data pb-5 pt-5">
+            <div class="container">
+        <article>
+            <div class="head">
+                <h1>تحليل البيانات</h1>
+                <p>يمكنك الآن معرفة علاقات الأدوية ببعضها البعض وإمكانية وجود الدواء<br>دواء آخر تردده</p>
+            </div>
+            <div class="date">
+                <h3>التاريخ: </h3>
+                <input type="date">
+            </div>
+
+            <div class="minimum">
+                <div>
+                    <div>
+                        <label>الحد الأدنى من الدعم</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>جزء من المعاملة التي تحتوي على كل من العقار A والدواء B</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>الحد الأدنى من الثقة</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>يقيس عدد مرات ظهور العناصر الموجودة في الأدوية B في المعاملات <br> 
+تحتوي على عقار (احتمال مشروط)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="show-me">
+                <button type="submit">اظهر لي</button>
+            </div>
+
+
+            <div class="body">
+                <div class="left">
+                    <h2>مجموعة العناصر المتكررة</h2>
+                    <textarea class="L-body"></textarea>
+                </div>
+                <div class="right">
+                    <h2>قواعد</h2>
+                    <textarea class="R-body"></textarea>
+                </div>
+            </div>
+        </article>
+    </div>
+    </div>
+    <!-- end data  -->
