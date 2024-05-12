@@ -22,7 +22,12 @@ ul {
     margin: 0;
     padding: 0;
 }
-
+.container{
+    padding-left: 15px !important; 
+    padding-right: 15px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 .navbar .container {
     display: flex;
     justify-content: space-between;
@@ -33,11 +38,7 @@ ul {
     color: white;
 }
 .navbar .icon svg {
-    margin: 26px auto;
-    border-left: none;
     border-right: 3px solid var(--secound);
-    margin-right: 15px;
-    padding-right: 10px;
 }
 @media (max-width: 991px){
     .navbar .icon svg{

@@ -86,7 +86,7 @@ ul {
     position: relative;
     color: black;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 15px;
     transition: 0.3s;
     display: flex;
     align-items: center;
@@ -140,7 +140,7 @@ ul {
 }
 .navbar .icon svg {
     padding: 0px 16px;
-    border-left: 3px solid var(--dark);
+    border-left: 3px solid var(--dark) !important;
     cursor: pointer;
     color: black !important;
     transition: .3s;
@@ -150,6 +150,11 @@ ul {
 }
 .navbar .dropdown-menu{
     z-index: 1;
+}
+@media(max-width: 767px){
+    .navbar .icon{
+        margin-bottom: 10px ;
+    }
 }
 .navbar .dropdown-item{
     color: black;
@@ -254,7 +259,7 @@ ul {
 /* start landing */
 .landing {
     position: relative;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 75.8px);
     background-image: url(../image/landing\ 3.jpg);
     background-size: cover ;
 }
@@ -294,6 +299,11 @@ ul {
     color: white;
     font-size: 25px;
 }   
+@media(max-width: 767px){
+    .landing p{
+        min-width: 200%;
+    }
+}
 .landing .go-down {
     color: var(--secound);
     position: absolute;
@@ -434,7 +444,7 @@ ul {
     position: relative;
     font-size: 40px;
     width: fit-content;
-    margin: auto;
+    margin: 15px auto;
 }
 .Profile .box h2::after{
     content: "";
@@ -555,13 +565,15 @@ ul {
     margin-bottom: 0;
 }
 /* end testimonials */
-/* start contanc */
-
-
+/* start contant */
 .contact .image img {
-        max-width: 110%;
+    max-width: 110%;
 }
-
+@media(max-width: 767px){
+    .contact .image img {
+        max-width: 10   0%;
+}
+}
 .contact .form-control{
     background-color:#D8D7FF;
     padding: 15px 20px;
@@ -573,10 +585,20 @@ ul {
     font-weight: bold;
     margin-bottom: 10px;
 }
+@media(max-width: 767px){
+    .contact .text h1{
+        text-align: center;
+    }
+}
 .contact .text p{
     max-width: 40%;
 }
-
+@media(max-width: 767px){
+    .contact .text p{
+        max-width: 100% !important;
+        text-align: center;
+    }
+}
 .contact .info {
     margin-top: 50px;
 }
@@ -593,6 +615,11 @@ ul {
     padding: 10px 20px;
     font-size: 20px;
 }
+@media(max-width: 767px){
+    .contact .textarea {
+        width: 100%;
+    }
+}
 .contact .btn-main {
     display: block;
     background-color: #0D8CB8;
@@ -606,6 +633,16 @@ ul {
 }
 .contact .btn-main:hover {
     background-color: #055976;
+}
+@media(max-width: 767px){
+    .contact .btn-main{
+        margin: 20px auto;
+    }
+}
+@media(max-width: 767px){
+    .contact{
+        padding-bottom: 1rem !important;
+    }
 }
 /* end contanc */
 /* start search  */
@@ -1020,7 +1057,6 @@ article {
     font-size: 20px;
     margin-right: 10px;
 }
-
 .date input[type="date"] {
     background: #9ddfd5;
     border: none;
@@ -1028,7 +1064,6 @@ article {
     padding: 4px 12px;
     border-radius: 15px;
 }
-
 
 .minimum {
     display: flex;
